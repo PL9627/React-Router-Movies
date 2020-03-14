@@ -7,9 +7,7 @@ const SavedList = props => (
     {props.list.map(movie => (
       <span className="saved-movie">{movie.title}</span>
     ))}
-    <Link exact path = '/'>
-      <div className="home-button">Home</div>
-    </Link>
+    <Link to = '/' className="home-button">Home</Link>
   </div>
 );
 
